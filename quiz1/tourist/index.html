@@ -3,44 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>tourist places - quiz 1</title>
-  <!-- Bootstrap CSS (dark theme) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="https://ui-avatars.com/api/?name=BRD&background=111111&color=fff" type="image/png">
   <style>
-    body {
-      background: #181818;
-      color: #f5f5f5;
-    }
-    header, footer {
-      background: #111 !important;
-      color: #f5f5f5 !important;
-    }
-    nav a {
-      color: #f5f5f5 !important;
-      text-decoration: none;
-      margin-right: 1em;
-    }
-    nav a:hover {
-      text-decoration: underline;
-      color: #00bfff !important;
-    }
-    .card {
-      background: #232323;
-      color: #f5f5f5;
-      border: 1px solid #444;
-      border-radius: 8px;
-    }
-    .card-title {
-      border-bottom: 1px solid #444;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-      font-size: 1.25rem;
-      font-weight: 500;
-    }
-    .place-title {
-      color: #00bfff;
-      font-weight: 500;
-      margin-top: 1rem;
-    }
+    body { background: #181818; color: #f5f5f5; }
+    header, footer { background: #111 !important; color: #f5f5f5 !important; }
+    nav a { color: #f5f5f5 !important; text-decoration: none; margin-right: 1em; }
+    nav a:hover { text-decoration: underline; color: #00bfff !important; }
+    nav a.active { color: #00bfff !important; font-weight: bold; }
+    .card { background: #232323; color: #f5f5f5; border: none; transition: 0.3s ease; }
+    .card:hover { transform: scale(1.02); box-shadow: 0 0 15px rgba(0,191,255,0.3); }
+    .card-title { border-bottom: 1px solid #444; padding-bottom: 0.5rem; margin-bottom: 1rem; font-size: 1.25rem; font-weight: 500; }
+    .place-title { color: #00bfff; font-weight: 500; margin-top: 1rem; }
   </style>
 </head>
 <body>
@@ -48,11 +22,11 @@
     <div class="container">
       <h1 class="mb-0">tourist places.</h1>
       <nav class="mt-2">
-        <a href="index.html">home.</a>
-        <a href="profile.html">profile.</a>
-        <a href="hometown.html">hometown.</a>
-        <a href="food.html">local food.</a>
-        <a href="tourist.html">tourist places.</a>
+        <a href="../index.html">home.</a>
+        <a href="../profile/">profile.</a>
+        <a href="../hometown/">hometown.</a>
+        <a href="../food/">local food.</a>
+        <a href="../tourist/" class="active">tourist places.</a>
       </nav>
     </div>
   </header>
@@ -61,58 +35,49 @@
     <div class="card shadow mx-auto mb-4" style="max-width: 800px;">
       <div class="card-body">
         <h2 class="card-title text-center mb-3">tourist attractions in jakarta.</h2>
-
         <p>
           Jakarta offers a wide variety of tourist attractions that reflect its culture, history, and modern lifestyle. 
           Here are some of the most popular destinations to visit in the capital city of Indonesia:
         </p>
-
         <h5 class="place-title">monas (national monument)</h5>
         <p>
           Monas is the most iconic landmark of Jakarta, symbolizing Indonesia’s struggle for independence. 
           Visitors can explore the surrounding Merdeka Square, visit the museum at the base, and enjoy panoramic views of the city 
           from the observation deck at the top.
         </p>
-
         <h5 class="place-title">dunia fantasi (dufan)</h5>
         <p>
           Located in Ancol Dreamland, DUFAN is Jakarta’s largest theme park. 
           It features exciting rides, roller coasters, and attractions suitable for all ages. 
           It’s a perfect place for families and friends looking for fun and entertainment.
         </p>
-
         <h5 class="place-title">kidzania jakarta</h5>
         <p>
           KidZania is an interactive city made for children, where kids can role-play different professions such as doctors, pilots, 
           firefighters, and more. It’s both entertaining and educational, giving young visitors a taste of real-world experiences 
           in a safe environment.
         </p>
-
         <h5 class="place-title">taman mini indonesia indah</h5>
         <p>
           Taman Mini is a cultural park that showcases the diversity of Indonesia’s provinces. 
           Each region is represented with traditional houses, museums, and cultural performances. 
           It’s a great way to explore the richness of Indonesia’s heritage in one location.
         </p>
-
         <h5 class="place-title">kepulauan seribu (thousand islands)</h5>
         <p>
           Just a short boat ride from Jakarta, Kepulauan Seribu offers a tropical escape with beautiful beaches, clear waters, 
           snorkeling, and diving spots. It’s a favorite weekend getaway for those looking to relax away from the city’s bustle.
         </p>
-
         <h5 class="place-title">grand indonesia</h5>
         <p>
           Grand Indonesia is one of the largest shopping malls in Southeast Asia, located in the heart of Jakarta. 
           It combines luxury shopping, dining, and entertainment, making it a popular destination for both locals and tourists.
         </p>
-
         <h5 class="place-title">ancol dreamland</h5>
         <p>
           Ancol is Jakarta’s main waterfront destination, offering a wide range of attractions including beaches, 
           Seaworld, art markets, golf courses, and resorts. It’s the ultimate recreation area in the city.
         </p>
-
         <p>
           Whether you are interested in history, family fun, shopping, or cultural experiences, Jakarta has something to offer everyone.
         </p>
@@ -121,10 +86,9 @@
   </main>
 
   <footer class="text-white text-center py-3 mt-4">
-    <p class="mb-0">Quiz 1 Web Programming &copy; 2025</p>
+    <p class="mb-0">quiz 1 web programming &copy; 2025</p>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
